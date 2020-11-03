@@ -1,0 +1,22 @@
+/* 主体样式 */
+
+.win-container {
+  width: 100%;
+  height: 100%;
+  background-color: #ebebeb;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  overflow: hidden;
+}
+
+.win-container .editor {
+  max-width: 100%;
+  max-width: 100%;
+}
+
+.win-container .editor .vditor-reset {
+  background-color: #eeeeee;
+}

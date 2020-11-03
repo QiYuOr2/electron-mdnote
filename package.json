@@ -1,0 +1,36 @@
+{
+  "name": "md-note",
+  "version": "1.0.0",
+  "main": "src/main/index.js",
+  "license": "Apache-2.0",
+  "description": "支持markdown的便签应用",
+  "author": "Mengyu Xu",
+  "scripts": {
+    "start": "npx electron .",
+    "build": "electron-builder build --win --ia32"
+  },
+  "devDependencies": {
+    "electron": "^10.1.5",
+    "electron-builder": "^22.9.1"
+  },
+  "dependencies": {
+    "about-window": "^1.13.4",
+    "vditor": "^3.6.0"
+  },
+  "build": {
+    "appId": "com.mengyu.mdnote",
+    "copyright": "Copyright (c) 2020 徐梦宇",
+    "productName": "MD便签",
+    "win": {
+      "icon": "icon.ico"
+    },
+    "nsis": {
+      "oneClick": false,
+      "language": "2052",
+      "perMachine": true,
+      "allowToChangeInstallationDirectory": true,
+      "installerIcon": "icon.ico",
+      "uninstallerIcon": "icon.ico"
+    }
+  }
+}
